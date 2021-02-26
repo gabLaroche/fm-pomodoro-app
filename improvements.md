@@ -9,3 +9,5 @@
 [ ] DRY up some code (especially app-settings)
 
 [ ] Some code in app-settings could be turned into more components
+
+[ ] Add automated rounds

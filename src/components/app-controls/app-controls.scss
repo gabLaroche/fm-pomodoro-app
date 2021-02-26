@@ -1,0 +1,41 @@
+.app-controls {
+  list-style-type: none;
+  margin: 5.5rem 0 4.5rem;
+  display: grid;
+  padding: 0;
+  grid-template-columns: repeat(3, 1fr);
+  background-color: var(--darker-blue);
+  border-radius: 30px;
+}
+
+.app-controls__control {
+  padding: 22px;
+  border-radius: 30px;
+  transition: background-color var(--transition);
+
+  &--active {
+    background-color: var(--primary-colour-active);
+  }
+}
+
+.app-control__btn {
+  color: var(--secondary-colour);
+  opacity: .4;
+  transition: opacity var(--transition), color var(--transition);
+  font-family: var(--font-family-active);
+  font-size: 1.2rem;
+
+  @media (min-width: 768px) {
+    font-size: 1.4rem;
+  }
+
+  &:hover,
+  &:focus {
+    opacity: 1;
+  }
+
+  .app-controls__control--active & {
+    color: var(--darker-blue);
+    opacity: 1;
+  }
+}

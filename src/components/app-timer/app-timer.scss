@@ -1,0 +1,30 @@
+.app-timer {
+  position: relative;
+}
+
+.app-timer__container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  text-align: center;
+}
+
+.app-timer__time {
+  margin: 0;
+}
+
+.app-timer__btn {
+  color: var(--light-gray);
+  font-size: 16px;
+  line-height: 16px;
+  letter-spacing: 15px;
+  text-transform: uppercase;
+  transition: color var(--transition);
+
+  &:hover,
+  &:focus {
+    color: var(--primary-colour-active);
+  }
+}

@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@700&family=Roboto+Slab:wght@700&family=Space+Mono:wght@700&display=swap');
+
+:root {
+  --font-family-1: 'Kumbh Sans', sans-serif;
+  --font-family-2: 'Roboto Slab', serif;
+  --font-family-3: 'Space Mono', monospace;
+  --font-family-active: var(--font-family-1);
+
+  --primary-colour-1: hsl(0, 91%, 71%);
+  --primary-colour-2: hsl(182, 91%, 71%);
+  --primary-colour-3: hsl(284, 89%, 74%);
+  --primary-colour-active: var(--primary-colour-1);
+
+  --secondary-colour: hsl(227, 100%, 92%);
+  --dark-blue: hsl(235, 35%, 18%);
+  --darker-blue: hsl(234, 39%, 14%);
+  --white: hsl(0, 0%, 100%);
+  --light-gray: hsl(229, 52%, 96%);
+
+  --transition: 0.25s ease-in-out;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: var(--secondary-colour);
+  font-family: var(--font-family-active);
+  margin: 0;
+  background-color: var(--dark-blue);
+  min-height: 100vh;
+}
+
+#app {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 4.8rem 0 5.6rem;
+  min-height: 100vh;
+}
+
+.visually-hidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+h1 {
+  font-size: 100px;
+  line-height: 120px;
+  letter-spacing: -5px;
+}
+
+h2 {
+  font-size: 28px;
+  line-height: 34px;
+}
+
+h3 {
+  font-size: 16px;
+  line-height: 16px;
+  letter-spacing: 15px;
+  text-transform: uppercase;
+}
+
+h4 {
+  font-size: 13px;
+  line-height: 13px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+}
+
+p, .body--1 {
+  font-size: 14px;
+  line-height: 18px;
+  opacity: 0.6;
+}
+
+.body--2 {
+  font-size: 12px;
+  line-height: 14px;
+  opacity: 0.4;
+}
+
+button {
+  background: none;
+  border: 0;
+  cursor: pointer;
+  outline: none;
+}

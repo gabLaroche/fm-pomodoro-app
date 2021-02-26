@@ -137,6 +137,7 @@
     </div>
   </teleport>
   <button
+      aria-label="open settings overlay"
       class="settings__button"
       @click="isOpen = true"
   >

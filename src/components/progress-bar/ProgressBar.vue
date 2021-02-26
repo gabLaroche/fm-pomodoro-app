@@ -1,5 +1,5 @@
 <template>
-  <canvas ref="canvas" width="400" height="400" />
+  <canvas ref="canvas" width="410" height="410" />
 </template>
 
 <script>
@@ -32,7 +32,7 @@ export default {
     draw() {
       const percentage = this.percentage === 0 ? 100 : this.percentage;
       const ctx = this.$refs.canvas.getContext('2d');
-      ctx.clearRect(0, 0, 400, 400);
+      ctx.clearRect(0, 0, 410, 410);
       const start = 4.71;
       const diff = (percentage / 100) * Math.PI * 2;
 
@@ -40,7 +40,7 @@ export default {
       ctx.lineWidth = 12;
       ctx.lineCap = 'round';
       ctx.beginPath();
-      ctx.arc(200, 200, 170,  start, diff + start, false);
+      ctx.arc(205, 205, 170,  start, diff + start, false);
       ctx.stroke();
     }
   },

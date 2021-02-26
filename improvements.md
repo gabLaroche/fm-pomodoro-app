@@ -11,3 +11,5 @@
 [ ] Some code in app-settings could be turned into more components
 
 [ ] Add automated rounds
+
+[ ] Improve mobile rendering

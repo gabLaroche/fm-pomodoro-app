@@ -39,14 +39,14 @@
                     class="overlay__input-btn overlay__input-btn--increase"
                     @click="handleDurationChange({ key: key, value: (duration + 1) })"
                 >
-                  <img src="src/assets/img/icon-arrow-up.svg" alt="" />
+                  <img :src="require('src/assets/img/icon-arrow-up.svg')" alt="" />
                 </button>
                 <button
                     :aria-label="`decrease ${durationText(key)} duration`"
                     class="overlay__input-btn overlay__input-btn--decrease"
                     @click="handleDurationChange({ key: key, value: (duration - 1) })"
                 >
-                  <img src="src/assets/img/icon-arrow-down.svg" alt="" />
+                  <img :src="require('src/assets/img/icon-arrow-down.svg')" alt="" />
                 </button>
               </div>
             </div>

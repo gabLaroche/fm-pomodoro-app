@@ -1,5 +1,5 @@
 <template>
-  <img src="src/assets/img/logo.svg" alt="Pomodoro logotype">
+  <img :src="requiresrc/assets/img/logo.svg" alt="Pomodoro logotype">
   <AppControls
       :active-timer="activeTimer"
       @button-click="activeTimer = $event"

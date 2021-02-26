@@ -39,14 +39,18 @@
                     class="overlay__input-btn overlay__input-btn--increase"
                     @click="handleDurationChange({ key: key, value: (duration + 1) })"
                 >
-                  <img :src="require('src/assets/img/icon-arrow-up.svg')" alt="" />
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="7">
+                    <path fill="none" stroke="#1E213F" stroke-width="2" d="M1 6l6-4 6 4"/>
+                  </svg>
                 </button>
                 <button
                     :aria-label="`decrease ${durationText(key)} duration`"
                     class="overlay__input-btn overlay__input-btn--decrease"
                     @click="handleDurationChange({ key: key, value: (duration - 1) })"
                 >
-                  <img :src="require('src/assets/img/icon-arrow-down.svg')" alt="" />
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="7">
+                    <path fill="none" stroke="#1E213F" stroke-width="2" d="M1 1l6 4 6-4"/>
+                  </svg>
                 </button>
               </div>
             </div>
@@ -149,7 +153,7 @@
 </template>
 
 <script>
-import { mapState, mapActions }  from 'vuex';
+import {mapState, mapActions} from 'vuex';
 
 export default {
   props: {
@@ -275,4 +279,4 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped src="./app-settings.scss" />
+<style lang="scss" scoped src="./app-settings.scss"/>

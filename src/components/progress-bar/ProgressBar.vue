@@ -36,7 +36,7 @@ export default {
       const start = 4.71;
       const diff = (percentage / 100) * Math.PI * 2;
 
-      ctx.strokeStyle = getComputedStyle(document.documentElement).getPropertyValue('--primary-colour-active');
+      ctx.strokeStyle = getComputedStyle(document.documentElement).getPropertyValue('--primary-colour-active') || 'hsl(0, 91%, 71%)';
       ctx.lineWidth = 12;
       ctx.lineCap = 'round';
       ctx.beginPath();
